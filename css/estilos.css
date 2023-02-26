@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border: 100px;
+    padding: 80px;
+    margin: 10px;
+}
+
+.Datos{
+    column-count: 2;
+    column-gap: 100px;
+    column-rule: 5px double #00000070;
+}
+
+h1{
+    text-align: center;
+    color: #000000d8;
+    height: 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 125px;
+    margin: 10px 0px 30px 0px;
+}
+
+h2{
+    text-decoration: underline rgb(57, 0, 201);
+}
+
+h3{
+    text-decoration: underline rgb(57, 0, 201);
+}
