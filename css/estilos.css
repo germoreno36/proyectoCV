@@ -1,4 +1,5 @@
-body{
+body {
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg?w=1800&t=st=1677541292~exp=1677541892~hmac=487e0587d9da890f5e3f9368226b508e8343d7ce4ae7a98094a77997d42f6a01");
     background-color: white;
     font-style: oblique;
     font-family: 'Roboto', sans-serif;
@@ -8,26 +9,52 @@ body{
     margin: 10px;
 }
 
-.Datos{
+.Datos {
     column-count: 2;
     column-gap: 100px;
     column-rule: 5px double #00000070;
 }
 
-h1{
-    text-align: center;
+h1 {
+    text-align: left;
     color: #000000d8;
-    height: 130px;
+    height: 100px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 125px;
+    font-weight: 200;
+    font-size: 100px;
     margin: 10px 0px 30px 0px;
 }
 
-h2{
+h2 {
+    color: black;
+    font-size: 35px;
     text-decoration: underline rgb(57, 0, 201);
 }
 
-h3{
+h3 {
     text-decoration: underline rgb(57, 0, 201);
+}
+
+#Titulo-Licenciado{
+    font-size: 50px;
+}
+
+#Datos-Personales {
+    color: blue;
+}
+
+#Formacion {
+    color: blueviolet;
+}
+
+#Cursos {
+    color: midnightblue;
+}
+
+#otros {
+    color: darkolivegreen;
+}
+
+#Antecedentes-Laborales {
+    color: firebrick;
 }
