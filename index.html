@@ -24,65 +24,84 @@
     <h2 id="Titulo-Licenciado">Licenciado en Sistemas</h2>
 
     <div class="Datos">
-
-        <h2 id="Datos-Personales">Datos Personales</h2>
-        <ul>
-            <li>Domicilio: Northaven Rd 5729</li>
-            <li>Localidad/Estado: Michigan</li>
-            <li>Teléfono: (898) 675-6061</li>
-            <li>Fecha de Nacimiento: 03/01/1996</li>
-            <li>Nacionalidad: estadounidense</li>
-            <li>Estado civil: Soltero</li>
-            <li>E-mail: clifton.jones@example.com</li>
-        </ul>
+        <!-- ------------------------ Datos, cursos, antecedentes, etc se pueden mostrar y ocultar clickeando sobre su correspondiente Título -->
+        <h2 id="Datos-Personales" onclick="mostrarOcultarDatos()">Datos Personales</h2>
+        <div id="mostrar_datos">
+            <ul>
+                <li>Domicilio: Northaven Rd 5729</li>
+                <li>Localidad/Estado: Michigan</li>
+                <li>Teléfono: (898) 675-6061</li>
+                <li>Fecha de Nacimiento: 03/01/1996</li>
+                <li>Nacionalidad: estadounidense</li>
+                <li>Estado civil: Soltero</li>
+                <li>E-mail: clifton.jones@example.com</li>
+            </ul>
+        </div>
         <!-- ------------------------ -->
-        <h2 id="Formacion">Formación</h2>
-        <ul>
-            <li>Licenciatura en Sistemas, Universidad X, 2020-En Curso</li>
-            <li>Técnico en informática con orientación a la producción industrial, Instituto X, 2011-2013</li>
-            <li>Bachillerato, Instituto X, 2011-2013</li>
-            <li>Educación General Básica, Colegio X, 2002-2010</li>
-        </ul>
+        <h2 id="Formacion" onclick="mostrarOcultarFormacion()">Formación</h2>
+        <div id="mostrar_formacion">
+            <ul>
+                <li>Licenciatura en Sistemas, Universidad X, 2020-En Curso</li>
+                <li>Técnico en informática con orientación a la producción industrial, Instituto X, 2011-2013</li>
+                <li>Bachillerato, Instituto X, 2011-2013</li>
+                <li>Educación General Básica, Colegio X, 2002-2010</li>
+                <button onclick="webInstitutoX()">Web del Instituto X</button>
+                <div id="web_instituto_x" hidden>
+                    <a href="https://www.google.com/" target="_blank">Visitar web del Instituto X</a> <!-- Utilizando Google como ejemplo -->
+                </div>
+            </ul>
+        </div>
         <!-- ------------------------ -->
-        <h2 id="Cursos">Cursos/Talleres</h2>
-        <ul>
-            <li>Certificación en Redes Conceptos Básicos, Universidad X, 2012</li>
-            <li>Introducción a la Programación, Mumuki, 2022</li>
-            <li>Introduccion Desarrollo Front End, Ticmas, 2023</li>
-        </ul>
+        <h2 id="Cursos" onclick="mostrarOcultarCursos()">Cursos/Talleres</h2>
+        <div id="mostrar_cursos">
+            <ul>
+                <li>Certificación en Redes Conceptos Básicos, Universidad X, 2012</li>
+                <li>Introducción a la Programación, Mumuki, 2022</li>
+                <li>Introduccion Desarrollo Front End, Ticmas, 2023</li>
+            </ul>
+        </div>
         <!-- ------------------------ -->
-        <h2 id="Otros">Otros</h2>
-        <ul>
-            <li>Manejo de paquete Office (Word, Excel, Power Point, Access).</li>
-            <li>Edición de imágenes y videos(Adobe Photoshop, Adobe Premiere).</li>
-        </ul>
+        <h2 id="Otros" onclick="mostrarOcultarOtros()">Otros</h2>
+        <div id="mostrar_otros">
+            <ul>
+                <li>Manejo de paquete Office (Word, Excel, Power Point, Access).</li>
+                <li>Edición de imágenes y videos(Adobe Photoshop, Adobe Premiere).</li>
+            </ul>
+        </div>
         <!-- ------------------------ -->
-        <h2 id="Antecedentes-Laborales">Antecedentes Laborales</h2>
-        <ol>
-            <li>
-                <h3>Community Manager</h3>
-                <h4>Empresa X. 2020-Actualidad</h4>
-                <ul>
-                    <li>Manejo de Redes Sociales</li>
-                    <li>Atención web a clientes</li>
-                    <li>Seguimiento de denuncias/sugerencias</li>
-                    <li>Encargado de ingresos a la empresa</li>
-                    <li>Mantenimiento de la web</li>
-                    <li>Diseño de banners e imágenes</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Operario de producción</h3>
-                <h4>Empresa X. 2015-2019</h4>
-                <ul>
-                    <li>Línea de producción</li>
-                    <li>Control de calidad de producto</li>
-                </ul>
-            </li>
-        </ol>
+        <h2 id="Antecedentes-Laborales" onclick="mostrarOcultarAntecedentes()">Antecedentes Laborales</h2>
+        <div id="mostrar_antecedentes">
+            <ol>
+                <li>
+                    <h3>Community Manager</h3>
+                    <h4>Empresa X. 2020-Actualidad</h4>
+                    <ul>
+                        <li>Manejo de Redes Sociales</li>
+                        <li>Atención web a clientes</li>
+                        <li>Seguimiento de denuncias/sugerencias</li>
+                        <li>Encargado de ingresos a la empresa</li>
+                        <li>Mantenimiento de la web</li>
+                        <li>Diseño de banners e imágenes</li>
+                        <button onclick="webEmpresaX()">Web de la Empresa X</button>
+                        <div id="web_empresa_x" hidden>
+                            <a href="https://www.ole.com.ar/" target="_blank">Visitar web de Empresa X</a> <!-- Utilizando Olé como ejemplo -->
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Operario de producción</h3>
+                    <h4>Empresa X. 2015-2019</h4>
+                    <ul>
+                        <li>Línea de producción</li>
+                        <li>Control de calidad de producto</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
 
     </div>
 
+    <script src="js/funciones.js"></script>
 </body>
 
 </html>
